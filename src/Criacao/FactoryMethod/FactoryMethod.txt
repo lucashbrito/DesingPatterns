@@ -1,0 +1,19 @@
+﻿
+Abstracao nao deve depender de detalhes, detalhes e quem deve depender de abstracoes. 
+
+[Problemas]
+
+Eu nao posso antecipar o tipo da classe de objeto que deve ser criada. 
+Pois, tenho objetos de varios tipos.
+
+Preciso delegar a responsabilidade para que as subclasses especifiquem os 
+objetos que criam. 
+
+[Objetivo do padrao Facotry method]
+
+Tambem conhecido como construtro virtual, o objetivo desse padrao e a possibilidade
+de criar uma fabrica de objetos em tempo de execucao e dexiar que o objeto decida
+seu tipo dinamicamente. 
+
+O factory method dispoe uma interface que cria um objeto, mais sao as subclasses,
+que irao decidir qual classe concreta instaciar. 

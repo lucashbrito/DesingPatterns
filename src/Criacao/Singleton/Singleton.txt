@@ -1,0 +1,11 @@
+﻿[Problemas]
+
+Precisamos controlar o acesso as intancias da classe garantindo que seja instanciada apenas uma vez.
+reduzir a utilizacao de memoria. 
+Fornecer mais flexibilidade que a utilizacao de estruturas estaticas. 
+
+[Solucao Singleton]
+O objetivo desse padrao e garantir que apenas uma unica instancia (o singleton) da classe possa ser criada. 
+
+Define uma operacao responsavel por garantir o acesso a uma unica instancia.
+Responsavel por criar e manter sua propria instancia unica. 
