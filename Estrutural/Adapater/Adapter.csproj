@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01C32E60-96F3-420D-8856-C796BF7529FF}</ProjectGuid>
+    <ProjectGuid>{AD55F31A-2382-4381-ABD2-4E33F3F1C815}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Prototype</RootNamespace>
-    <AssemblyName>Prototype</AssemblyName>
+    <RootNamespace>Adapter</RootNamespace>
+    <AssemblyName>Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,17 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FuncionarioPermanente.cs" />
-    <Compile Include="FuncionarioTemporario.cs" />
-    <Compile Include="IFuncionario.cs" />
+    <Compile Include="IAtaqueInimigo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoboInimigo.cs" />
+    <Compile Include="RoboInimigoAdapter.cs" />
+    <Compile Include="TanqueInimigo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Prototype.txt" />
+    <Content Include="Adapter.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

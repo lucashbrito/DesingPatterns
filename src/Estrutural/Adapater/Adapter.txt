@@ -1,0 +1,26 @@
+﻿[Definição Adapter]
+
+Os padrões estruturais se preocupam com a forma como classes e objetos são compostos para formar estruturas maiores. 
+
+Padrão particularmente útil para fazer bibliotecas de classes desenvolvidas independentemente trabalharem juntas.
+
+Cria uma classe que faça uma adpatação. 
+
+Adapter faz com que uma interface adaptada seja compativel com outra. 
+
+Adapter de classes e adapter de objetos. 
+
+Converta a interface de uma class em outra interface que os clientes esperam. O adaptador permite que as classes trabalhem juntas, o que não poderia ocorrer devido a interfaces incompativeis. 
+
+[vantagens]
+
+Adapter de classe: permite que o adaptador sobrescreva algumas funções do adaptado. 
+
+Adapter de objeto: Permite o uso de um unico adaptador para uma hierarquia de classes adaptadas. 
+
+
+[Desvantagens]
+
+Adapter de classe: Não funciona bem quando se quer adaptar uma hierarquia de classes. 
+
+Adapter de ojbetos: É mais dificil sobrescrever funções do adaptado. 
