@@ -1,0 +1,15 @@
+﻿[Prototype]
+
+Especifique o tipo de objetos a criar usando uma instancia prototipica 
+e crie novos objetos copiando esse prototipo. 
+
+[Vantagens]
+
+Uma copia exata carrega consigo uma especie de fotografia do objeto: não apenas seu comportamento é "clonado",
+mas também seu estado, ou seja, um novo objeto com os mesmos campos do objeto original [Metsker, 2004];
+
+Entretanto quando se quer copiar um objeto, quase sempre se deseja um novo objeto e não um objeto novo, o que significa uma copia não instanciada daquele objeto, 
+ou com os campos ajustados para valores iniciais, que sejam default para toda a aplicação. 
+
+Como desvantagem, o programador deve ter em mente esta diferença ao implementar este padrão, pois objetos clonados podem apresentar problemas de inclusão de classes não exsitentes e/ou referencias 
+(dependências de parametros ou resultados que sejam internos aos objetos e que não sejam levados em consideração na clonagem).
