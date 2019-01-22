@@ -1,0 +1,17 @@
+﻿Abstract factory 
+cria  uma instancia de varias familias de classes
+
+factory method
+cria uma instacia de varias classes derivadas. 
+
+[vantagens do abstract factory]
+
+elimina a necessidade de anexar classes especificas das
+aplicacoes no codigo.
+
+fornece um gancho para as subclasses. A criacao de classes 
+e subclasses se torna mais flexivel.
+
+porem, como desvantagem podemos citar o fato de que podemos
+ter que criar varias subclasses da classe creator apenas
+para criar um ConcreteProduct
