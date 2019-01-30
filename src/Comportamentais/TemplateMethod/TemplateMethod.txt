@@ -1,0 +1,4 @@
+﻿[Definição]
+
+Defina o esquelto de um algoritmo em uma operação, adiando algumas etapas para subclasses. 
+Template method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo. 
