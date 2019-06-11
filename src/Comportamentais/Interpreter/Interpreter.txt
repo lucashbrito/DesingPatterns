@@ -1,0 +1,10 @@
+﻿[Definição]
+
+Dada um linguagem, defina uma representação para usa gramatica junto com um interprete que use a representação para interpretar sentenças na linguagem. 
+
+
+
+AbstractExpression: Declara uma interface para executar uma operação. 
+
+TerminalExpression: Implementa uma opeeração interpert associada a simbolos de terminal na gramatica. Uma instancia é necessaria para cada simbolo de terminal na sentença. 
+
