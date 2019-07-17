@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Memento
+﻿namespace Memento
 {
     class Program
     {
         static void Main(string[] args)
         {
+            var originator = new Originator();
+            originator.State = "on";
+
+            var caretaker = new Caretaker();
+            caretaker.Memento = originator.CreateMemento();
+
+            originator.State = "off";
+
+            originator.SetMemento(caretaker.Memento);
         }
     }
 }

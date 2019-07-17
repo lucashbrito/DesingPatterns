@@ -1,0 +1,16 @@
+﻿Uma maneira de notificar a mudanca para um numero de classes. 
+
+Defina uma dependencia um para muitos entre objetos para que, quando um 
+objeto mudar de estado, todos os seus dependentes sejam notificados e atualizados
+automaticamente.
+
+As classes e objetos que participam desse padrao sao: 
+
+Assunto = Conhece seus observadores. Qualquer numero de objetos observadores
+pode observar um assunto. Fornece uma interface para anexar e desanexar objetos Observer.
+
+ConcreteSubject = Armazena o estado de interesse do ConcreteObserver. Envia uma notificacao
+a seus observadores quando seu estado muda.
+
+ConcreteObserver = Mantem uma referencia a um objeto ConcreteSubject. Implementa a interface
+de atualizacao do Observer para manter seu estado consistente com o assunto. 

@@ -1,0 +1,11 @@
+﻿altera o comportamento de um objeto quando seu estado se altera
+
+Permitir que um objeto altere seu comportamento quando seu estado interno e alterado. O objeto aparecera para mudar sua classe
+
+As classes e objetos que participam desse padrao sao:
+
+Contexto = Define a interface de interesse para os clientes. Mantem uma instancia de uma subclasse ConcreteState que define o estado atual. 
+
+Estado = Define uma interface para encapuslar o comportamento associado a um estado particular do Contexto. 
+
+Estado Concreto = Cada subclasse implementa um comportamento associado a um estado de Contexto. 

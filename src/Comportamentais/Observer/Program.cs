@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Observer
 {
@@ -10,6 +6,16 @@ namespace Observer
     {
         static void Main(string[] args)
         {
+
+            var assuntoConcreto = new AssuntoConcreto();
+            assuntoConcreto.Anexar(new ObservadorConcreto(assuntoConcreto, "X"));
+            assuntoConcreto.Anexar(new ObservadorConcreto(assuntoConcreto, "z"));
+            assuntoConcreto.Anexar(new ObservadorConcreto(assuntoConcreto, "y"));
+
+            assuntoConcreto.EstadoAssunto = "abc";
+            assuntoConcreto.Notificar();
+
+            Console.ReadLine();
         }
     }
 }

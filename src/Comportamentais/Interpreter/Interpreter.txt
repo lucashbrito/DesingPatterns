@@ -6,5 +6,5 @@ Dada um linguagem, defina uma representação para usa gramatica junto com um in
 
 AbstractExpression: Declara uma interface para executar uma operação. 
 
-TerminalExpression: Implementa uma opeeração interpert associada a simbolos de terminal na gramatica. Uma instancia é necessaria para cada simbolo de terminal na sentença. 
+TerminalExpression: Implementa uma operação interpert associada a simbolos de terminal na gramatica. Uma instancia é necessaria para cada simbolo de terminal na sentença. 
 

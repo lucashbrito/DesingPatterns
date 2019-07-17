@@ -1,0 +1,15 @@
+﻿Captura e restaura o estado interno de um objeto. 
+
+Sem violar o encapsulamento, capture e externalize o estado interno de um objeto para que o objeto possa ser restaurado posteriormente para esse estado. 
+
+As classes e objetos que participam desse padrao sao:
+
+Memento = Armazena o estado interno do objeto Originador. A lembranca pode armazenar tanto ou tao pouco do estado interno do organizador quanto necessario, a criterio de auto.
+Proteger contra o acesso por objetos que nao sejam o originador. Mementos tem efetivamente duas interfaces. Zelador ve uma interface estreita para o Memento - So pode
+passar a lembranca para os outros objetos. O Originador, ao contrario, ve uma interface ampla, que permiete acessar todos os dados necessarios para se restaurar
+ao estado anterioro. Idealmente, apenas para o Originador que produz a lembranca teria permissao para acessar o estado interno da lembranca. 
+
+Origininador= cria uma lembranca contendo um instantaneo de seu estado interno atual.  Usa a lembranca para restaurar seu estado interno. 
+
+Zelador= e responsavel pela guarda da lembranca. Nunca opera ou examina o conteudo de uma lembranca. 
+

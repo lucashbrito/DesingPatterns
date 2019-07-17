@@ -1,0 +1,11 @@
+﻿Encapsula um algoritmo dentro de uma classe. 
+
+Defina uma familia de algoritmos, encapsule cada um deles e torne-os intercambiaveis. A estrategia permite que o algoritmo varie independentemente dos clientes que o usam. 
+
+As classes e objetos que participam desse padrao sao: 
+
+Estrategia = Declara uma interface comum a todos os algoritmos suportados. Contexto usa essa interface para chamar o algoritmo definido por um ConcreteStrategy. 
+
+ConcreteStrategy= Implementa o algoritmo usando a interface Strategy. 
+
+Contexto= Esta configurado com um objeto ConcreteStrategy. Mantem uma referencia a um objeto Strategy. Pode definir uma interface que permita a Strategy acessar seus dados. 

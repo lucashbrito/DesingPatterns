@@ -1,0 +1,13 @@
+﻿Sequencialmente acessa os elementos de uma colecao. 
+Fornece uma maneira de acessar os elementos de um objeto agregado sequencialmente sem expor sua representacao subjacente. 
+
+As classes e objetos que participam desse padrao:
+
+Iterator = Define uma interface para acessar e percorrer elementos. 
+
+ConcreteIterator = Implmenta a interface do Iterator. Mantem o controle da posicao atual na travessia do agregado. 
+
+Agregado = Define uma interface para criar um objeto iterador.
+
+ConcreteAggregate = Implementa a interface de criacao do iterator para retornar
+uma instancia do Concretelterator adequado. 

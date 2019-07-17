@@ -2,3 +2,10 @@
 
 Defina o esquelto de um algoritmo em uma operação, adiando algumas etapas para subclasses. 
 Template method permite que as subclasses redefinam certas etapas de um algoritmo sem alterar a estrutura do algoritmo. 
+
+As classes e objetos que participam desse padrao sao:
+
+AbstractClass = Define operacoes primitivas abstratas que subclasses concretas definem para implementar etaps de um algoritmo. Implementa um metodo de modelo que define 
+o esqueleto de um algoritmo. O metodo de modelo chama operacoes primitivas, bem como operacoes definidas no AbstractClass ou de outros objetos.
+
+ConcreteClass= Implementa as operacoes primitivas de executas etapas especificas da subclasse de algoritmo. 

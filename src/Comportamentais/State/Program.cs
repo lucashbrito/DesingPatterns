@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace State
 {
@@ -10,6 +6,14 @@ namespace State
     {
         static void Main(string[] args)
         {
+            Contexto contexto = new Contexto(new ConcreteStateA());
+
+            contexto.Request();
+            contexto.Request();
+            contexto.Request();
+            contexto.Request();
+
+            Console.ReadLine();
         }
     }
 }

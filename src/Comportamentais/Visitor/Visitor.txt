@@ -1,0 +1,21 @@
+﻿Define uma nova operacao para uma classe sem alteracao.
+
+Representa uma operacao a ser executada nos elementos de uma estrutura de objeto. Visitante permite definir uma nova oepracao 
+sem alterar as classes dos elementos em que ela opera.
+
+As classes e objetos que participam desse padrao sao:
+
+Visitante = Declara uma operacao Visit para cada classe de ConcreteElement na estrutura de objeto. O nome e a assinatura da operacao identificam 
+a classe que envia a solicitacao de visita ao visitante. Isso permite que o visitante determine a classe concreta do elemento que esta sendo visitado.
+Em seguida, o visitante pode acessar os elementos diretamente por meio de sua interface especifica. 
+
+ConcreteVisitor = Implementa cada operacao declarada pelo Visitante. Cada operacao implementa um fragmento do algoritmo definido para a 
+classe ou objeto correspondente na estrutura. O ConcreteVisitor fornece o contexto para o algoritmo e armaneza seu estado local. Esse estado geralmente 
+acumula resultados durante a travessia da estrutura. 
+
+Elemento= Define uma operacao Accept que aceita um visitante como um argumento. 
+
+ConcreteElement = Implementa uma operacao de aceitacao que leva um visitante como um argumento. 
+
+ObjectStructure = Pode aumentar seus elementos. Pode fornecer uma interface de alto nivel para permitir que o visitante visite seus elementos. Pode ser 
+um  Composite (padrao) ou uma colecao, como uma lista ou um conjunto.

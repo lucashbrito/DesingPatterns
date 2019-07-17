@@ -1,0 +1,15 @@
+﻿Define comunicacao simplificada entre classes. 
+
+Defina um objeto que encapsule como um conjunto de objetos interage. O mediador promove um acoplamento flexiel impedindo 
+que os objetos se refiram explicitamente e permite que voce varie sua interacao de forma independete. 
+
+As classes e objetos que participam desse padrao sao:
+
+Mediador = Define uma interface para comunicacao com objetos Colleague. 
+
+ConcreteMediator= Implementa o comportamento cooperativo ao coordenador os objetos
+do Colega. Conhece e mantem seus colegas. 
+
+Aulas de Colegas= Cada classe de Colega conhece seu objeto Mediator. Cada 
+Colega comunica com o seu mediador sempre que, de outra forma, teria comunicado
+com outro colega.
