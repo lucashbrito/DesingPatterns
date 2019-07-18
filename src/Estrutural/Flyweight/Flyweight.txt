@@ -1,1 +1,7 @@
-﻿
+﻿O objetivo desse padrao e melhorar o desempenho de um procedimento compartilhando objetos com caracteristicas
+parecidas. 
+O padrao prove parametros para serem aplicados em objetos ja existentes, modificando suas propriedades conforme 
+solicitado, ao inves da necessidade de sempre instancia-los. 
+
+Intrinsecas: propriedades imutaveis, ou seja, que caracterizam o objeto compartilhado. 
+Extrinsecas: propriedades variaveis que podem receber novos valores a cada acesso. 
