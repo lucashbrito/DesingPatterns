@@ -1,5 +1,6 @@
 ﻿[Definição]
 
-Evite acoplar o remetente de uma solicitação ao seu receptor, dando a mais de um objeto a chance de maniuplar a solicitação. 
+Evite acoplar o remetente de uma solicitação ao seu receptor, 
+dando a mais de um objeto a chance de maniuplar a solicitação. 
 Encadeie os objetos de recebimento e passe a solicitação ao longo da cadeia até que um objeto a manipule. 
 

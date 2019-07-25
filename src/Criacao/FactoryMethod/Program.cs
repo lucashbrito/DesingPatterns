@@ -21,11 +21,6 @@ namespace FactoryMethod
             Console.WriteLine($"vc vai jogar com..");
 
             personagem.Escolhido();
-
-
-
-
-
         }
     }
 }
