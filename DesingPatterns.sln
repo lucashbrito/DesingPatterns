@@ -55,6 +55,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flyweight", "src\Estrutural
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "src\Estrutural\Proxy\Proxy.csproj", "{5B6EB421-EE78-4F93-93B7-F899EC9D95CC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cloud", "Cloud", "{A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External Configuration Store Pattern", "External Configuration Store Pattern", "{0F9BBA4E-D11B-4ED4-965E-BFE521DF93A0}"
+	ProjectSection(SolutionItems) = preProject
+		Description ECS.txt = Description ECS.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Federated Identity Pattern", "Federated Identity Pattern", "{8FA2756A-7D0F-4380-9C86-70B26D2AA2CF}"
+	ProjectSection(SolutionItems) = preProject
+		Description FID.txt = Description FID.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Getekeeper Pattern", "Getekeeper Pattern", "{4914D6C2-69EB-4CF5-829A-0E04B893EFC5}"
+	ProjectSection(SolutionItems) = preProject
+		Description GetKeeper.txt = Description GetKeeper.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runtime reconfiguration Pattern", "Runtime reconfiguration Pattern", "{DF729203-4BF8-42F3-ACE1-C2A4D78BE428}"
+	ProjectSection(SolutionItems) = preProject
+		Description RR.txt = Description RR.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Valet Key Pattern", "Valet Key Pattern", "{724163B6-B22D-4667-A413-864D8E1A722F}"
+	ProjectSection(SolutionItems) = preProject
+		Description VK.txt = Description VK.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +208,11 @@ Global
 		{705C0435-3C29-46F8-AA4E-33A9AD6A4FDF} = {8956247E-5968-43CB-8CD9-51F2FBF79F3D}
 		{60A6CB86-92CF-45DF-8D25-BA4BE62F8B20} = {8956247E-5968-43CB-8CD9-51F2FBF79F3D}
 		{5B6EB421-EE78-4F93-93B7-F899EC9D95CC} = {8956247E-5968-43CB-8CD9-51F2FBF79F3D}
+		{0F9BBA4E-D11B-4ED4-965E-BFE521DF93A0} = {A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}
+		{8FA2756A-7D0F-4380-9C86-70B26D2AA2CF} = {A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}
+		{4914D6C2-69EB-4CF5-829A-0E04B893EFC5} = {A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}
+		{DF729203-4BF8-42F3-ACE1-C2A4D78BE428} = {A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}
+		{724163B6-B22D-4667-A413-864D8E1A722F} = {A1E5A088-5BA4-421B-BAD2-B9839EBA29A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9E2E562-7FD4-43C2-BFD0-4FF0144F2823}
