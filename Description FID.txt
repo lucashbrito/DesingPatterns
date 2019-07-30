@@ -1,0 +1,26 @@
+The users call our Application then our Application send our Users to Identity Managenment,
+IDP (Identity Management) authenticate our user, the ID return for our users an access token (claims). So the user 
+apresents the token to our application and our application trust in this token because comes from Identity Management.
+
+Things to consider
+
+
+The Identity Management will be in Production System so it needs to be available, perfomant and secure. Considerer to work with 
+ADFS (provide only basic information like email, ask for more infomation in case for first authentication then the application
+will be able to have more information) and Azure Active Directory. The Identity Management should provide Authentication and not Authorization 
+returns tokens that contains claims about users like email, name etc..  
+
+
+The usage of the pattern
+ 
+ Single sing-on. 
+ Authentica "external" users. B2B & B2C
+ Different tenants, different IDPs. 
+
+ When not to use this pattern 
+
+ When you already have the application using SQL identities to autheticate.
+
+ Federated Identity Example
+
+ Application calls Azure Active directory that has a service with (Identity-as-a-Service, Authtentication, Multi-factor authentication, Advanced threat detection)

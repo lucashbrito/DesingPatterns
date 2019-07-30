@@ -1,0 +1,39 @@
+- Things to consider
+
+*	Error Handling = What to do when a setting doen'st exist, is empty, has the wrong type, etc.. 
+*	Production system= Availability, performance, security. 
+*	Flexible= All sorts of value types. 
+*	The endpoint= Should be scoped, secure, predictable. 
+*	Security = Authentication system. Separate read/write. 
+
+Reload changed configuration
+
+
+When to use this pattern
+
+When you have multiples application that share the same thing.
+When you want to reduce the management configuration. 
+Logs, audit configuration access. Register all the request etc... 
+
+When not to use this pattern 
+
+Simple, single application.
+
+
+1 Application						Azure key vault ( there is a Stores that can store Certificates, Keys, Secrets. Loggings. Highly available)
+2 Azure Active Directory is a identity store for services in the cloud. 
+Application needs to call Azure Active Directory and Azure Active Directory needs to know Application to send a token with this token 
+you can access Azure key vault. 
+
+Basically  1 application calls Azure Active Directory to get a Token then Application calls Azure key vault to get the secret using the token.
+
+
+
+External Configuration System Example
+
+Configuration is not part of the deployment. 
+Multiple applications share configuration. 
+Configuration is managed  centrally.
+Separtion between managin and reading secrets. 
+Application don't know secrets. 
+
