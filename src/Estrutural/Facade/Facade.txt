@@ -1,3 +1,15 @@
-﻿[Definição]
+﻿Component Interface:
 
-Fornecer uma interface unificada para um conjunto de interfaces em um subsistema. O facade define uma interface de nivel superior que facilita o uso do subsistema. 
+Beverage defines the interface for objects that can have additional responsibilities. It has methods GetDescription and GetCost.
+Concrete Component:
+
+Coffee is a concrete implementation of the Beverage class. It provides the basic implementation of GetDescription and GetCost.
+Decorator Abstract Class:
+
+BeverageDecorator is an abstract class that implements the Beverage interface. It maintains a reference to a Beverage object and delegates the GetDescription and GetCost methods to the wrapped object.
+Concrete Decorators:
+
+MilkDecorator and SugarDecorator are concrete implementations of the BeverageDecorator class. They extend the functionality of the Beverage object by adding their specific behavior.
+Client:
+
+CoffeeShop demonstrates the use of the Decorator pattern by creating a Coffee object and dynamically adding Milk and Sugar decorators to it. The client prints the description and cost of the beverage at each step.
