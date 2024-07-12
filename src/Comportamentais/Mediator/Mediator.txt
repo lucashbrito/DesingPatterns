@@ -1,15 +1,13 @@
-﻿Define comunicacao simplificada entre classes. 
+﻿Interface do Mediador:
 
-Defina um objeto que encapsule como um conjunto de objetos interage. O mediador promove um acoplamento flexiel impedindo 
-que os objetos se refiram explicitamente e permite que voce varie sua interacao de forma independete. 
+IChatMediator define a interface para o mediador de bate-papo. Possui métodos para enviar mensagens e adicionar usuários.
+Mediador Concreto:
 
-As classes e objetos que participam desse padrao sao:
+ChatMediator implementa a interface IChatMediator. Mantém uma lista de usuários e coordena o envio de mensagens para os usuários apropriados.
+Classe User:
 
-Mediador = Define uma interface para comunicacao com objetos Colleague. 
+User é uma classe abstrata que representa um usuário na sala de bate-papo. Possui métodos para enviar e receber mensagens e mantém uma referência ao mediador.
+ConcreteUser é uma implementação concreta da classe User. Utiliza o mediador para enviar mensagens e imprime mensagens quando são recebidas.
+Cliente:
 
-ConcreteMediator= Implementa o comportamento cooperativo ao coordenador os objetos
-do Colega. Conhece e mantem seus colegas. 
-
-Aulas de Colegas= Cada classe de Colega conhece seu objeto Mediator. Cada 
-Colega comunica com o seu mediador sempre que, de outra forma, teria comunicado
-com outro colega.
+ChatClient demonstra o uso do padrão Mediator em um sistema de bate-papo. Cria um mediador de bate-papo, adiciona usuários à sala de bate-papo e demonstra o envio e recebimento de mensagens através do mediador.

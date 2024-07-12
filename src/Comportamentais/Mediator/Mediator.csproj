@@ -44,12 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Colega.cs" />
-    <Compile Include="ColegaConcreto1.cs" />
-    <Compile Include="ColegaConcreto2.cs" />
-    <Compile Include="IColega.cs" />
-    <Compile Include="Mediador.cs" />
-    <Compile Include="MediadorConcreto.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="ConcreteUser.cs" />
+    <Compile Include="IChat.cs" />
+    <Compile Include="ChatClient.cs" />
+    <Compile Include="ChatMediator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -31,7 +31,7 @@ namespace Decorator
 
 
 
-            Console.ReadKey()
+            Console.ReadKey();
 
 
 
