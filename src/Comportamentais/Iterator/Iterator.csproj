@@ -44,10 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aggregate.cs" />
-    <Compile Include="ConcreteAggregate.cs" />
-    <Compile Include="ConcreteIterator.cs" />
-    <Compile Include="Iterator.cs" />
+    <Compile Include="Song.cs" />
+    <Compile Include="PlaylistIterator.cs" />
+    <Compile Include="IAggregate.cs" />
+    <Compile Include="IIterator.cs" />
+    <Compile Include="Playlist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

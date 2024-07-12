@@ -6,29 +6,20 @@ namespace Iterator
     {
         static void Main(string[] args)
         {
-            var aggregate = new ConcreteAggregate();
+            var playlist = new Playlist();
 
-            aggregate[0] = "Item A";
-            aggregate[1] = "Item B";
-            aggregate[2] = "Item C";
-            aggregate[3] = "Item D";
+            playlist.AddSong(new Song("Song 1", "Artist A", "Album X"));
+            playlist.AddSong(new Song("Song 2", "Artist B", "Album Y"));
+            playlist.AddSong(new Song("Song 3", "Artist C", "Album Z"));
 
-            var iterator = aggregate.CreateIterator();
+            IIterator<Song> iterator = playlist.CreateIterator();
 
-            Console.WriteLine("interagindo com a colecao:");
+            Console.WriteLine("Iterating through the playlist:");
 
-            object item = iterator.First();
-
-            while (item != null)
+            while (iterator.MoveNext())
             {
-                Console.WriteLine($"Current Item:{iterator.CurrentItem()}");
-                item = iterator.Next();
-                Console.WriteLine($"Is done:{iterator.IsDone()}");
+                Console.WriteLine(iterator.Current);
             }
-
-            iterator.Next();
-            Console.WriteLine($"Is done:{iterator.IsDone()}");
-            Console.ReadLine();
         }
     }
 }

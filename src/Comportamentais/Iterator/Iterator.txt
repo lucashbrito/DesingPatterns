@@ -1,13 +1,18 @@
-﻿Sequencialmente acessa os elementos de uma colecao. 
-Fornece uma maneira de acessar os elementos de um objeto agregado sequencialmente sem expor sua representacao subjacente. 
+﻿Iterator Interface:
 
-As classes e objetos que participam desse padrao:
+IIterator<T> defines the interface for accessing and traversing elements. It includes properties and methods like Current, MoveNext(), and Reset().
+Concrete Iterator:
 
-Iterator = Define uma interface para acessar e percorrer elementos. 
+PlaylistIterator implements the IIterator<Song> interface for a playlist. It keeps track of the current position and provides the logic for moving to the next song and resetting the iteration.
+Aggregate Interface:
 
-ConcreteIterator = Implmenta a interface do Iterator. Mantem o controle da posicao atual na travessia do agregado. 
+IAggregate<T> defines an interface for creating an iterator. This is implemented by the Playlist class.
+Concrete Aggregate:
 
-Agregado = Define uma interface para criar um objeto iterador.
+Playlist maintains a collection of songs and provides a method to add songs to the playlist. It also implements the CreateIterator method to return an instance of PlaylistIterator.
+Song Class:
 
-ConcreteAggregate = Implementa a interface de criacao do iterator para retornar
-uma instancia do Concretelterator adequado. 
+Represents a song with properties for title, artist, and album. It overrides the ToString method to provide a readable representation of the song.
+Client:
+
+MusicApp demonstrates the use of the iterator pattern. It creates a playlist, adds songs, and uses the iterator to traverse and print the songs in the playlist.
