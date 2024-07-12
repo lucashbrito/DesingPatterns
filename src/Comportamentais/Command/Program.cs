@@ -4,13 +4,23 @@
     {
         static void Main(string[] args)
         {
-            Receiver receiver = new Receiver();
-            Command command = new ConcreteCommand(receiver);
-            Invoker invoker = new Invoker();
+            var livingRoomLight = new Light();
 
-            invoker.SetCommand(command);
-            invoker.ExecuteCommand();
+            ICommand lightOnCommand = new LightOnCommand(livingRoomLight);
+            ICommand lightOffCommand = new LightOffCommand(livingRoomLight);
 
+            RemoteControl remote = new RemoteControl();
+
+            
+            remote.SetCommand(lightOnCommand);
+            remote.PressButton();
+
+            // Turn the light off
+            remote.SetCommand(lightOffCommand);
+            remote.PressButton();
+
+            // Undo the last operation (turn the light on again)
+            remote.PressUndo();
         }
     }
 }
