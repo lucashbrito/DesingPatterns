@@ -1,13 +1,22 @@
-﻿namespace Facade
+﻿using System;
+
+namespace Facade
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Facade facade = new Facade();
+            Beverage beverage = new Coffee();
+            Console.WriteLine($"{beverage.GetDescription()} ${beverage.GetCost()}");
 
-            facade.MetodoA();
-            facade.MetodoB();
+            beverage = new MilkDecorator(beverage);
+            Console.WriteLine($"{beverage.GetDescription()} ${beverage.GetCost()}");
+
+            beverage = new SugarDecorator(beverage);
+            Console.WriteLine($"{beverage.GetDescription()} ${beverage.GetCost()}");
+
+            beverage = new SugarDecorator(beverage); // Adding another sugar
+            Console.WriteLine($"{beverage.GetDescription()} ${beverage.GetCost()}");
         }
     }
 }
