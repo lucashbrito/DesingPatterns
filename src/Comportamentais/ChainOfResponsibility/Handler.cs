@@ -2,11 +2,11 @@
 {
     public abstract class Handler
     {
-        protected Handler _sucessor;
+        protected Handler Next;
 
-        public void SetSucessor(Handler sucessor)
+        public void SetNextHandler(Handler next)
         {
-            _sucessor = sucessor;
+            Next = next;
         }
 
         public abstract void HandleRequest(int request);

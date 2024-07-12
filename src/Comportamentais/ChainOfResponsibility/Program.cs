@@ -6,18 +6,18 @@ namespace ChainOfResponsibility
     {
         static void Main(string[] args)
         {
-            Handler h1 = new ConcreteHandler();
-            Handler h2 = new ConcreteHandler2();
-            Handler h3 = new ConcreteHandler3();
+            Handler orderHandler = new OrderHandler();
+            Handler paymentHandler = new PaymentHandler();
+            Handler sendEmailHandler = new SendEmailHandler();
 
-            h1.SetSucessor(h2);
-            h2.SetSucessor(h3);
+            orderHandler.SetNextHandler(paymentHandler);
+            paymentHandler.SetNextHandler(sendEmailHandler);
 
             var requests = new[] { 1, 2, 35, 67, 23, 78, 43 };
 
             foreach (var request in requests)
             {
-                h1.HandleRequest(request);
+                orderHandler.HandleRequest(request);
             }
 
             Console.ReadLine();

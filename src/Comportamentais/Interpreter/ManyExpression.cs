@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices.WindowsRuntime;
-
-namespace Interpreter
+﻿namespace Interpreter
 {
     public class ManyExpression : Expression
     {

@@ -8,10 +8,11 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ChainOfResponsibility</RootNamespace>
     <AssemblyName>ChainOfResponsibility</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConcreteHandler.cs" />
-    <Compile Include="ConcreteHandler2.cs" />
-    <Compile Include="ConcreteHandler3.cs" />
+    <Compile Include="OrderHandler.cs" />
+    <Compile Include="PaymentHandler.cs" />
+    <Compile Include="SendEmailHandler.cs" />
     <Compile Include="Handler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
